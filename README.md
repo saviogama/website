@@ -1,4 +1,4 @@
-# saviogm.dev
+# saviogama.dev
 
 Terminal-first developer portfolio built as an interactive command-line experience.
 
@@ -46,20 +46,6 @@ corepack pnpm test:e2e
 corepack pnpm build
 ```
 
-## Environment
-
-Configure these variables in Vercel before building production:
-
-```env
-VITE_EMAILJS_SERVICE_ID=
-VITE_EMAILJS_TEMPLATE_ID=
-VITE_EMAILJS_PUBLIC_KEY=
-VITE_UMAMI_SCRIPT_URL=
-VITE_UMAMI_WEBSITE_ID=
-```
-
-After changing any `VITE_*` value, trigger a new deployment so Vite can include it in the static build.
-
 ## Documentation
 
-The README is intentionally short. Product context, architecture decisions, glossary, branching, and deployment strategy live in [`docs/`](docs/).
+The README is intentionally short. Product context, architecture decisions, production configuration, glossary, branching, and deployment strategy live in [`docs/`](docs/).

@@ -74,7 +74,7 @@ The boot sequence should be system-like rather than identity-led. The site can r
 The terminal prompt should be:
 
 ```text
-guest@saviogm.dev:~$
+guest@saviogama.dev:~$
 ```
 
 Invalid commands should render a simple terminal-style error and suggest `help`. The MVP should not attempt fuzzy matching or closest-command suggestions.

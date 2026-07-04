@@ -1,4 +1,4 @@
-export const PROMPT = "guest@saviogm.dev:~$";
+export const PROMPT = "guest@saviogama.dev:~$";
 
 export const WELCOME_LINES = ["SYSTEM READY", 'Type "help" to list available commands.'];
 

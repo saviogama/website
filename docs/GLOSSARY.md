@@ -11,7 +11,7 @@ Terms marked as draft should be revisited as product and architecture decisions 
 - **Command handler**: Draft term for the logic that receives a parsed command and returns the terminal output or UI state change.
 - **Terminal output**: Content rendered after a command executes. Output should remain close to real terminal text. Clickable project links are the main approved exception for MVP.
 - **Reducer/state machine**: The preferred architecture for modeling terminal state, command execution, prompt flows, and async submission states.
-- **Prompt**: The visible input line where the visitor types commands. The MVP prompt is `guest@saviogm.dev:~$`.
+- **Prompt**: The visible input line where the visitor types commands. The MVP prompt is `guest@saviogama.dev:~$`.
 - **Command history**: Previously executed commands available for keyboard navigation during the current page session only.
 - **Autocomplete**: Keyboard-assisted command completion. It is explicitly out of scope for MVP.
 - **Invalid command**: A submitted command that does not exist in the command registry. It should show an error and suggest `help`, without fuzzy matching.
