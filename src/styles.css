@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #83f44f;
+  background: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+a {
+  color: #83f44f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.terminal-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.terminal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.boot-blackout {
+  animation: boot-blackout 3.9s steps(1) both;
+  background: #000;
+}
+
+.animate-boot-line-fade {
+  animation: boot-line-pulse 1.35s steps(5, end) both;
+}
+
+@keyframes boot-blackout {
+  0%,
+  72% {
+    opacity: 0;
+  }
+
+  73%,
+  88% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes boot-line-pulse {
+  0% {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+
+  10%,
+  68% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  69%,
+  78% {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+
+  79%,
+  88% {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+}
+
+.alien-readout {
+  position: relative;
+}
+
+.alien-readout::before {
+  position: absolute;
+  left: -18px;
+  top: 0.25em;
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: #83f44f;
+  transform: rotate(45deg);
+}
