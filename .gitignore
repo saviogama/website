@@ -1,0 +1,11 @@
+node_modules
+.pnpm-store
+dist
+coverage
+artifacts
+playwright-report
+test-results
+.env
+.env.local
+.DS_Store
+*.tsbuildinfo
